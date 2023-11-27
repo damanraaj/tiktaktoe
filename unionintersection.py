@@ -1,11 +1,5 @@
 def intersect(x,y):
-    out=[]
-    x=list(set(x))
-    y=list(set(y))
-    for i in x:
-        if i in y:
-            out.append(i)
-    return out
+    return set(x)&set(y)
 
 def union(x,y):
     out=[]
